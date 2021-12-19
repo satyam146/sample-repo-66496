@@ -1,13 +1,10 @@
 pipeline {
     agent any
     stages {      
-        stage ('Shell Script') {
+        stage ('Hello') {
             steps {
-                git url: "https://github.com/satyam146/sample-repo-66496.git", branch: "main"
-                readFile 'README.md'
+                echo "Hello World"
             }
-            
-    
-        }
-    }
-}
+      }
+     }
+     }
