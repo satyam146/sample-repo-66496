@@ -1,10 +1,9 @@
 pipeline {
     agent any
-    stages {
-        
+    stages {      
         stage ('Shell Script') {
             steps {
-                git url: "https://github.com/GauravGirase/sample-repo-62899-9-dec.git", branch: "main"
+                git url: "https://github.com/satyam146/sample-repo-66496.git", branch: "main"
                 readFile 'README.md'
             }
             
